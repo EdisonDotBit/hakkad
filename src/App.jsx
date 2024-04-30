@@ -1,15 +1,10 @@
-import Navigation from './components/Navigation'
-import LandingPage from './components/Landing'
-import Footer from './components/Footer'
-import Landing from './components/LandingContext'
+import LandingPage from "./views/LandingPage"
+
 
 function App() {
   return (
     <section>
-      <Navigation />
-      <LandingPage />
-      <Landing />
-      <Footer />
+      <LandingPage/>
     </section>
   )
 }
