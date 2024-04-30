@@ -10,13 +10,13 @@ function Navigation() {
           <img src={logo} alt="logo" className='h-auto w-[100px]'/>
         </div>
         <div className='mx-5 text-black'>
-          <NavLink to="/KAHIT-ANO" className=' mx-5 text-[15px] '>Home</NavLink>
-          <NavLink to="/FOOTER" className='mx-5 text-[15px] '>About Cybershield</NavLink>
+          <NavLink to="/Home" className=' mx-5 text-[15px] '>Home</NavLink>
+          <NavLink to="" className='mx-5 text-[15px] '>About Cybershield</NavLink>
           <a href="" className='mx-5 text-[15px] '>Contact</a>
         </div>
         <div className='absolute right-[100px] text-white flex gap-2'>
-          <button className='bg-black py-2 px-6 rounded-md text-[14px]'>Login</button>
-          <button className='bg-black py-2 px-6 rounded-md text-[14px]'>Register</button>
+          <NavLink to="/LoginPage" className='bg-black py-2 px-6 rounded-md text-[14px]'>Login</NavLink>
+          <NavLink to="/SignUpPage" className='bg-black py-2 px-6 rounded-md text-[14px]'>Register</NavLink>
         </div>
       </div>
     </>
