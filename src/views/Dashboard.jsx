@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import { FiLayout , FiAward , FiHelpCircle , FiLogOut , FiCheckCircle , FiClock , FiLock } from "react-icons/fi"
-import Beginner from '../assets/beginner.png'
+import Beginner from '../assets/badge1.png'
 import Lesson1 from '../assets/Lesson1.png'
 import Lesson2 from '../assets/Lesson2.png'
 import Lesson3 from '../assets/Lesson3.png'
