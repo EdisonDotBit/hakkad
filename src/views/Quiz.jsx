@@ -1,7 +1,11 @@
 
 function Quiz() {
   return (
-    <div>Quiz</div>
+    <>
+      <div className="h-full w-full p-5 bg-red-500">
+
+      </div>
+    </>
   )
 }
 

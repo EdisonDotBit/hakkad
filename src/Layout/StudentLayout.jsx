@@ -7,16 +7,18 @@ function StudentLayout() {
   const location = useLocation();
   return (
     <section>
-      <div className="w-screen max-h-screen h-screen">
-        <div className="flex h-full border-[1px] border-[#CDCDCD]">
-          <div className="relative h-full w-[300px] flex flex-col border-r-[1px] border-[#CDCDCD]">
+      <div className="max-h-screen min-h-screen h-full">
+        <div className="relative flex">
+          
+          <div className="relative h-auto max-h-auto min-h-screen  w-[300px]  flex flex-col border-r-[1px] ">
             <NavLink to="" className="flex justify-center my-3">
               <img src={logo} alt="Logo" className="h-auto w-[200px]" />
             </NavLink>
+            
             <div className="group">
               <NavLink
                 to="/Student/Dashboard"
-                className={`py-5 flex text-[#0F57C1] bg-[#EBF3FF] ${
+                className={`py-5 flex text-[#0F57C1] bg-[#EBF3FF]${
                   location.pathname == "/Student/Dashboard"
                     ? "text-[#0F57C1] border-[#0F57C1] border-r-4  bg-[#EBF3FF]"
                     : "text-[#CFCFCF] bg-white border-r-4 border-none"
@@ -27,6 +29,8 @@ function StudentLayout() {
                 </div>
               </NavLink>
             </div>
+
+
             <div className="group">
               <NavLink
                 to="/Student/Quiz"
@@ -41,6 +45,8 @@ function StudentLayout() {
                 </div>
               </NavLink>
             </div>
+
+
             <div className="group">
               <NavLink
                 to="/Student/Leaderboard"
@@ -69,10 +75,15 @@ function StudentLayout() {
           </div>
 
           <div className="w-full h-full flex flex-col">
-            <div className="relative flex items-center w-full h-[140px] border-b-[1px] border-[#CDCDCD]">
-              <h1 className="ml-10 text-2xl font-medium text-[#0F57C1]">
-                Dashboard
-              </h1>
+            <div className="relative flex items-center w-full py-10 border-b-[1px] border-[#CDCDCD]">
+            <h1 className="ml-10 text-2xl font-medium text-[#0F57C1]">
+              {
+              location.pathname === "/Student/Dashboard" ? "Dashboard" :
+              location.pathname === "/Student/Quiz" ? "Quiz" :
+              location.pathname === "/Student/Leaderboard" ? "Leaderboard" :
+              ""
+              }
+            </h1>
 
               <div className="absolute top-0 h-full items-center right-[50px] flex">
                 <a

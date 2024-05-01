@@ -31,7 +31,7 @@ function DashboardContent() {
                             </div>      
                         </div>
 
-                        <div className='w-full h-full p-10 flex gap-10 flex-wrap justify-center'>
+                        <div className='w-full h-full p-10 flex gap-8 flex-wrap justify-center'>
 
                             {/* Lesson Box Container */}
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
