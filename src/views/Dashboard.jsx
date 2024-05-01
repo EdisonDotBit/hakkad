@@ -82,7 +82,11 @@ function Dashboard() {
 
                             {/* Lesson Box Container */}
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
-                                <div className=' w-full'>
+
+                                <div className='relative w-full'>
+                                    <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
+                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                    </div>
                                     <img src={Lesson1} alt="lesson1" />
                                 </div>
 
@@ -103,7 +107,10 @@ function Dashboard() {
                             </div>
 
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
-                                <div className=' w-full'>
+                                <div className='relative w-full'>
+                                    <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
+                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                    </div>
                                     <img src={Lesson2} alt="lesson2" />
                                 </div>
 
@@ -124,7 +131,10 @@ function Dashboard() {
                             </div>
 
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
-                                <div className=' w-full'>
+                                <div className='relative w-full'>
+                                    <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
+                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                    </div>
                                     <img src={Lesson3} alt="lesson3" />
                                 </div>
 
@@ -190,6 +200,27 @@ function Dashboard() {
                                 </div>
                             </div>
 
+                            <div className='relative overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow opacity-70'>
+                                <FiLock className='absolute top-20 left-20 w-auto h-10 text-red-500' />
+                                <div className=' w-full'>
+                                    <img src={NotAvail} alt="NotAvail" />
+                                </div>
+
+                                <div className='p-2 w-full'>
+                                    <h1 className='font-medium text-[15px]'>Network Security</h1>
+                                    <p className='text-[12px] text-[#A3A3A3]'>3 Chapters</p>
+                                </div>
+
+                                <div className='px-2'>
+                                    <div className='flex text-[12px] text-[#CF2525] font-medium'>
+                                        <p className='mr-1'>0</p>
+                                        <p>Not Available Yet</p>
+                                    </div>
+                                    <div className='relative overflow-hidden bg-[#FFF1F1] w-full pt-2 mt-[6px] rounded-full'>
+                                        <div className='absolute top-0 w-[0] rounded-full h-full bg-[#FFB424]'></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className='relative overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow opacity-70'>
                                 <FiLock className='absolute top-20 left-20 w-auto h-10 text-red-500' />
                                 <div className=' w-full'>
