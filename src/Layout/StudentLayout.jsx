@@ -18,7 +18,7 @@ function StudentLayout() {
             <div className="group">
               <NavLink
                 to="/Student/Dashboard"
-                className={`py-5 flex text-[#0F57C1] bg-[#EBF3FF]${
+                className={`py-5 flex text-[#0F57C1] bg-[#EBF3FF] ${
                   location.pathname == "/Student/Dashboard"
                     ? "text-[#0F57C1] border-[#0F57C1] border-r-4  bg-[#EBF3FF]"
                     : "text-[#CFCFCF] bg-white border-r-4 border-none"
