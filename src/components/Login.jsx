@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,8 +12,15 @@ function Login() {
 
   return (
     <>
-      <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900 max-w-[1750px] min-w-[1200px] m:auto">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900">
+        <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
+
+        <div className="flex justify-center p-5">
+         <NavLink to="/Home"><img src={logo} alt="logo" className="w-auto h-[100px]" /></NavLink>
+        </div>
+        
+        <div className="py-10 flex flex-col items-center justify-center">
+
           <h1 className="text-center text-3xl font-bold leading-tight tracking-tight text-gray-700 dark:text-white">
             Login Account
           </h1>
@@ -63,7 +71,7 @@ function Login() {
                     />
                     <button
                       type="button"
-                      className="absolute inset-y-0 right-0 px-3 py-2.5 focus:outline-none"
+                      className="absolute text-white inset-y-0 right-0 px-3 py-2.5 focus:outline-none"
                       onClick={togglePasswordVisibility}
                     >
                       {showPassword ? "Hide" : "Show"}
@@ -115,7 +123,7 @@ function Login() {
               </form>
             </div>
           </div>
-        </div>
+          </div>
       </section>
     </>
   )
