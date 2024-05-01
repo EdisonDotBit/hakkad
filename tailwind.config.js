@@ -11,6 +11,8 @@ export default {
       poppins:["Poppins","Sans-serif"]
     }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
