@@ -13,18 +13,18 @@ function Dashboard() {
                     <img src={logo} alt="Logo" className='h-auto w-[200px]' />
                 </NavLink>
                 <div className='group'>
-                    <NavLink to="/Student/Dashboard" className='py-5 flex bg-[#EBF3FF] border-r-4 border-[#0F57C1]' >
-                        <div className='flex items-center text-[#0F57C1] text-[15px] ml-11 font-medium'><FiLayout className='mr-2 h-auto w-6'/> Dashboard</div>
+                    <NavLink to="/Student/Dashboard" className='py-5 flex text-[#0F57C1] bg-[#EBF3FF] border-r-4 border-[#0F57C1]' >
+                        <div className='flex items-center text-[15px] ml-11 font-medium'><FiLayout className='mr-2 h-auto w-6'/> Dashboard</div>
                     </NavLink>
                 </div>
                 <div className='group'>
-                    <NavLink to="/Student/Quiz" className='py-5 flex bg-white border-r-4 border-none group-hover:bg-[#EBF3FF]'>
-                        <div className='flex items-center text-[#CFCFCF] text-[15px] ml-11 font-medium'><FiHelpCircle className='mr-2 h-auto w-6'/> Quiz</div>
+                    <NavLink to="/Student/Quiz" className='py-5 flex text-[#CFCFCF] bg-white border-r-4 border-none  group-hover:bg-[#EBF3FF]'>
+                        <div className='flex items-center text-[15px] ml-11 font-medium'><FiHelpCircle className='mr-2 h-auto w-6'/> Quiz</div>
                     </NavLink>
                 </div>
                 <div className='group'>
-                    <NavLink to="/Student/Leaderboard" className='py-5 flex bg-white border-r-4 border-none group-hover:bg-[#EBF3FF]'>
-                        <div className='flex items-center text-[#CFCFCF] text-[15px] ml-11 font-medium'><FiAward className='mr-2 h-auto w-6'/> Leaderboard</div>
+                    <NavLink to="/Student/Leaderboard" className='py-5 flex text-[#CFCFCF] bg-white border-r-4 border-none group-hover:bg-[#EBF3FF]'>
+                        <div className='flex items-center text-[15px] ml-11 font-medium'><FiAward className='mr-2 h-auto w-6'/> Leaderboard</div>
                     </NavLink>
                 </div>
                 <div className='group'>
