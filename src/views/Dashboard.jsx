@@ -40,7 +40,9 @@ function Dashboard() {
             </div>
 
             <div className='w-full h-full flex flex-col'>
-                <div className='relative flex w-full h-[140px] border-b-[1px] border-[#CDCDCD]'>
+                <div className='relative flex items-center w-full h-[140px] border-b-[1px] border-[#CDCDCD]'>
+                    <h1 className='ml-10 text-2xl font-medium text-[#0F57C1]'>Dashboard</h1>
+
                     <div className='absolute top-0 h-full items-center right-[50px] flex'>
                         <a href="" className='flex items-center bg-[#EBF3FF] py-1 px-5 rounded-full mr-3 '>
                             <p className='font-medium text-[#0F57C1] mr-2'>331pts</p>
