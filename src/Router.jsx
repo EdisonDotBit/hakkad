@@ -6,6 +6,7 @@ import DashboardContent from "./views/DashboardContent";
 import Quiz from "./views/Quiz";
 import Leaderboard from "./views/Leaderboard";
 import StudentLayout from "./Layout/StudentLayout";
+import Contact from "./components/Contact.jsx";
 
 const Router = () => (
   <>
@@ -14,6 +15,7 @@ const Router = () => (
       <Route path="/Home" element={<LandingPage />} />
       <Route path="/LoginPage" element={<Login />} />
       <Route path="/SignUpPage" element={<Register />} />
+      <Route path="/Contact" element={<Contact />} />
 
       <Route path="/Student" element={<StudentLayout />}>
         <Route path="" element={<Navigate to="/Student/Dashboard" />} />
