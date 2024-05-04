@@ -103,7 +103,7 @@ function StudentLayout() {
             </div>
 
             {/* For Outlet */}
-            <div className="w-full h-full p-5">
+            <div className="w-full h-full">
               <Outlet />
             </div>
           </div>
