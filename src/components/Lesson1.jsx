@@ -4,27 +4,128 @@ import header1 from '../assets/header1.jpg';
 import { FaAngleDown } from "react-icons/fa";
 import lessonpic from "../assets/lesson1pic.png";
 import lessonpic2 from "../assets/lesson1pic2.png";
-
 import lesson2pic from "../assets/Lesson2pic.png";
-
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 
 function Lesson1() {
-    // State for managing the dropdown status for each dropdown
     const [dropdownStates, setDropdownStates] = useState({
         dropdown1: false,
         dropdown2: false,
         dropdown3: false
     });
 
-    // Function to toggle the dropdown for a specific dropdown
     const toggleDropdown = (dropdownName) => {
         setDropdownStates(prevState => ({
-            dropdown1: dropdownName === 'dropdown1' ? !prevState.dropdown1 : false,
-            dropdown2: dropdownName === 'dropdown2' ? !prevState.dropdown2 : false,
-            dropdown3: dropdownName === 'dropdown3' ? !prevState.dropdown3 : false
+            ...prevState,
+            [dropdownName]: !prevState[dropdownName]
         }));
+    };
+
+    const [inputValue1, setInputValue1] = useState('');
+    const [inputValue2, setInputValue2] = useState('');
+    const [inputValue3, setInputValue3] = useState('');
+    const [buttonColor1, setButtonColor1] = useState('gray');
+    const [buttonColor2, setButtonColor2] = useState('gray');
+    const [buttonColor3, setButtonColor3] = useState('gray');
+    const [inputBorderColor1, setInputBorderColor1] = useState('');
+    const [inputBorderColor2, setInputBorderColor2] = useState('');
+    const [inputBorderColor3, setInputBorderColor3] = useState('');
+    const [submitButtonDisabled1, setSubmitButtonDisabled1] = useState(false);
+    const [submitButtonDisabled2, setSubmitButtonDisabled2] = useState(false);
+    const [submitButtonDisabled3, setSubmitButtonDisabled3] = useState(false);
+    const [answerSubmitted1, setAnswerSubmitted1] = useState(false);
+    const [answerSubmitted2, setAnswerSubmitted2] = useState(false);
+    const [answerSubmitted3, setAnswerSubmitted3] = useState(false);
+    const [progress, setProgress] = useState(0);
+
+    const consProgress = 33.333333333333333;
+
+    const correctAnswer1 = 'Offensive Security';
+    const correctAnswer2 = 'Defensive Security';
+    const correctAnswer3 = 'Penetration Testing';
+
+    const handleInputChange1 = (event) => {
+        const value = event.target.value;
+        setInputValue1(value);
+        if (value.trim() === '') {
+            setButtonColor1('gray');
+        } else {
+            setButtonColor1('#007bff');
+        }
+    };
+
+    const handleInputChange2 = (event) => {
+        const value = event.target.value;
+        setInputValue2(value);
+        if (value.trim() === '') {
+            setButtonColor2('gray');
+        } else {
+            setButtonColor2('#007bff');
+        }
+    };
+
+    const handleInputChange3 = (event) => {
+        const value = event.target.value;
+        setInputValue3(value);
+        if (value.trim() === '') {
+            setButtonColor3('gray');
+        } else {
+            setButtonColor3('#007bff');
+        }
+    };
+
+    const handleSubmit1 = () => {
+        if (inputValue1.trim() === '') {
+            return;
+        }
+
+        if (inputValue1 === correctAnswer1) {
+            setInputBorderColor1('green');
+            setButtonColor1('green');
+            setSubmitButtonDisabled1(true);
+            setAnswerSubmitted1(true);
+            setProgress(progress + consProgress);
+        } else {
+            setInputBorderColor1('red');
+            setButtonColor1('red');
+        }
+    };
+
+    const handleSubmit2 = () => {
+        if (inputValue2.trim() === '') {
+            return;
+        }
+
+        if (inputValue2 === correctAnswer2) {
+            setInputBorderColor2('green');
+            setButtonColor2('green');
+            setSubmitButtonDisabled2(true);
+            setAnswerSubmitted2(true);
+            setProgress(progress + 33.3);
+            setProgress(progress + consProgress);
+        } else {
+            setInputBorderColor2('red');
+            setButtonColor2('red');
+        }
+    };
+
+    const handleSubmit3 = () => {
+        if (inputValue3.trim() === '') {
+            return;
+        }
+
+        if (inputValue3 === correctAnswer3) {
+            setInputBorderColor3('green');
+            setButtonColor3('green');
+            setSubmitButtonDisabled3(true);
+            setAnswerSubmitted3(true);
+            setProgress(progress + 33.4);
+            setProgress(progress + consProgress);
+        } else {
+            setInputBorderColor3('red');
+            setButtonColor3('red');
+        }
     };
 
     return (
@@ -34,7 +135,10 @@ function Lesson1() {
                 <div className='h-auto flex flex-col items-center'>
                     <div className='relative bg-white h-auto'>
                         <img src={header1} alt="" className='w-full h-auto margin-auto' />
-                        <div className='h-4 bg-[#212C42] flex relative'><div className=' absolute left-0 bg-customBlue top-0 w-[0%] h-full'></div><span className='absolute top-0 text-white text-[10px] font-medium text-center w-full'>Lesson Progress (0%)</span></div>
+                        <div className='h-4 bg-[#212C42] flex relative'><div style={{ width: `${progress}%` }} className="absolute left-0 bg-customBlue top-0 transition-all duration-500 ease-in-out h-full"></div>
+                            <div style={{ width: `${progress}%` }} className={`absolute left-0 ${progress === 100 ? 'bg-green-500' : 'bg-customBlue'} top-0 transition-all duration-500 ease-in-out h-full`}></div>
+                            <span className='absolute top-0 text-white text-[10px] font-medium text-center w-full'>Lesson Progress ({progress}%)</span>
+                        </div>
                     </div>
 
 
@@ -46,8 +150,8 @@ function Lesson1() {
                                 <div className='relative w-full py-7'>
                                     {/* Dropdown */}
                                     <div className='rounded-md flex items-center absolute top-0 w-full py-4 bg-[#212C42] px-5 text-white'>
-                                        <h1 className='text-[#FF2323]'>Lesson1</h1>
-                                        <button className='border border-[#424B5E] w-3 h-3 mx-2 rounded-full'></button>
+                                        <h1 className={`text-${inputBorderColor1}-500`}>Lesson1</h1>
+                                        <button className={`bg-${inputBorderColor1}-500 border border-[#424B5E] w-3 h-3 mx-2 rounded-full`}></button>
                                         <p className=''>What is Offensive Security?</p>
                                         <button className='absolute right-5' onClick={() => toggleDropdown('dropdown1')}>
                                             <FaAngleDown className={`transform ${dropdownStates.dropdown1 ? 'rotate-[0deg]' : 'rotate-[-90deg]'}`} />
@@ -73,8 +177,21 @@ function Lesson1() {
                                             <li>Defensive Security</li>
                                         </ul>
                                         <div className='flex w-full'>
-                                            <input type="text" className='w-full border-none rounded-xl text-[14px]' placeholder='Type your answer here' />
-                                            <input type="submit" className='ml-2 py-2 px-16 bg-customBlue text-white rounded-xl text-[14px]' />
+                                            <input
+                                                type="text"
+                                                className={`w-full rounded-xl text-[14px] border-${inputBorderColor1}-500`}
+                                                placeholder='Type your answer here'
+                                                value={inputValue1}
+                                                onChange={handleInputChange1}
+                                                readOnly={answerSubmitted1}
+                                            />
+                                            <input
+                                                type="submit"
+                                                className='ml-2 py-2 px-16 text-white rounded-xl text-[14px]'
+                                                style={{ backgroundColor: buttonColor1 }}
+                                                onClick={handleSubmit1}
+                                                disabled={submitButtonDisabled1}
+                                            />
                                         </div>
                                     </div>
                                 )}
@@ -85,8 +202,8 @@ function Lesson1() {
                                 <div className='relative w-full py-7'>
                                     {/* Dropdown */}
                                     <div className='rounded-md flex items-center absolute top-0 w-full py-4 bg-[#212C42] px-5 text-white'>
-                                        <h1 className='text-[#FF2323]'>Lesson2</h1>
-                                        <button className='border border-[#424B5E] w-3 h-3 mx-2 rounded-full'></button>
+                                        <h1 className={`text-${inputBorderColor2}-500`}>Lesson2</h1>
+                                        <button className={`bg-${inputBorderColor2}-500 border border-[#424B5E] w-3 h-3 mx-2 rounded-full`}></button>
                                         <p className=''>Hacking your first machine</p>
                                         <button className='absolute right-5' onClick={() => toggleDropdown('dropdown2')}>
                                             <FaAngleDown className={`transform ${dropdownStates.dropdown2 ? 'rotate-[0deg]' : 'rotate-[-90deg]'}`} />
@@ -114,19 +231,33 @@ function Lesson1() {
                                             <li>Security Assessment</li>
                                         </ul>
                                         <div className='flex w-full'>
-                                            <input type="text" className='w-full border-none rounded-xl text-[14px]' placeholder='Type your answer here' />
-                                            <input type="submit" className='ml-2 py-2 px-16 bg-customBlue text-white rounded-xl text-[14px]' />
+                                            <input
+                                                type="text"
+                                                className={`w-full border-${inputBorderColor2}-500 rounded-xl text-[14px]`}
+                                                placeholder='Type your answer here'
+                                                value={inputValue2}
+                                                onChange={handleInputChange2}
+                                                readOnly={answerSubmitted2}
+                                            />
+                                            <input
+                                                type="submit"
+                                                className='ml-2 py-2 px-16 bg-customBlue text-white rounded-xl text-[14px]'
+                                                style={{ backgroundColor: buttonColor2 }}
+                                                onClick={handleSubmit2}
+                                                disabled={submitButtonDisabled2}
+                                            />
                                         </div>
                                     </div>
                                 )}
                             </div>
 
+                            {/* dropdown3 */}
                             <div className='w-full p-2 px-[85px]'>
                                 <div className='relative w-full py-7'>
                                     {/* Dropdown */}
                                     <div className='rounded-md flex items-center absolute top-0 w-full py-4 bg-[#212C42] px-5 text-white'>
-                                        <h1 className='text-[#FF2323]'>Lesson3</h1>
-                                        <button className='border border-[#424B5E] w-3 h-3 mx-2 rounded-full'></button>
+                                        <h1 className={`text-${inputBorderColor3}-500`}>Lesson3</h1>
+                                        <button className={`bg-${inputBorderColor3}-500 border border-[#424B5E] w-3 h-3 mx-2 rounded-full`}></button>
                                         <p className=''>Careers in cyber security</p>
                                         <button className='absolute right-5' onClick={() => toggleDropdown('dropdown3')}>
                                             <FaAngleDown className={`transform ${dropdownStates.dropdown3 ? 'rotate-[0deg]' : 'rotate-[-90deg]'}`} />
@@ -150,21 +281,40 @@ function Lesson1() {
                                             <li>Red Teamer - Plays the role of an adversary, attacking an organization and providing feedback from an enemy's perspective.</li>
                                             <li>Security Engineer - Design, monitor, and maintain security controls, networks, and systems to help prevent cyberattacks.</li>
                                         </ul>
-                                        <div className=' flex items-center w-full justify-center mt-6'>
+                                        <div className='flex items-center w-full justify-center mt-6'>
                                             <h1 className='text-green-500 font-medium w-[35vh]'>Answer the questions below</h1>
                                             <div className='w-full h-[2px] mt-[4px] bg-green-500'></div>
                                         </div>
-                                        <p className='text-center my-5'>What do you aspire to become within the realm of Cyber Security?</p>
+                                        <p>Which of the following options describes the process of simulating hacker attacks to identify vulnerabilities in systems?</p>
+                                        <ul className='flex gap-12 font-medium list-disc justify-center my-5'>
+                                            <li>Offensive Security</li>
+                                            <li>Defensive Security</li>
+                                            <li>Penetration Testing</li>
+                                            <li>Security Assessment</li>
+                                        </ul>
                                         <div className='flex w-full'>
-                                            <input type="text" className='w-full border-none rounded-xl text-[14px]' placeholder='Type your answer here' />
-                                            <input type="submit" className='ml-2 py-2 px-16 bg-customBlue text-white rounded-xl text-[14px]' />
+                                            <input
+                                                type="text"
+                                                className={`w-full border-${inputBorderColor3}-500 rounded-xl text-[14px]`}
+                                                placeholder='Type your answer here'
+                                                value={inputValue3}
+                                                onChange={handleInputChange3}
+                                                readOnly={answerSubmitted3}
+                                            />
+                                            <input
+                                                type="submit"
+                                                className='ml-2 py-2 px-16 bg-customBlue text-white rounded-xl text-[14px]'
+                                                style={{ backgroundColor: buttonColor3 }}
+                                                onClick={handleSubmit3}
+                                                disabled={submitButtonDisabled3}
+                                            />
                                         </div>
                                     </div>
                                 )}
                             </div>
 
                             <div className='w-full p-2 px-[85px] mt-10 pb-16'>
-                                <div className=' text-customBlue w-full opacity-50 py-5 rounded-lg flex justify-center items-center'>
+                                <div className=' text-custom Blue w-full opacity-50 py-5 rounded-lg flex justify-center items-center'>
                                     <IoIosInformationCircleOutline class="text-2xl mr-2" />
                                     <h1 class="text-[14px] italic">Finish all the lessons to unlock other lessons.</h1>
                                 </div>
