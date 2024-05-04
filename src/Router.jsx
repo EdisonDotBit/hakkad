@@ -7,6 +7,8 @@ import Quiz from "./views/Quiz";
 import Leaderboard from "./views/Leaderboard";
 import StudentLayout from "./Layout/StudentLayout";
 import Contact from "./components/Contact.jsx";
+import Quiz1 from "./components/Quiz1.jsx";
+import Quiz2 from "./components/Quiz2.jsx";
 
 const Router = () => (
   <>
@@ -22,6 +24,9 @@ const Router = () => (
         <Route path="Dashboard" element={<DashboardContent />} />
         <Route path="Quiz" element={<Quiz />} />
         <Route path="Leaderboard" element={<Leaderboard />} />
+
+        <Route path="Quiz1" element={<Quiz1 />} />
+        <Route path="Quiz2" element={<Quiz2 />} />
       </Route>
     </Routes>
   </>

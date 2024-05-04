@@ -1,6 +1,7 @@
 import { LuSwords,LuShield } from "react-icons/lu";
 import { PiSuitcase } from "react-icons/pi";
 import Beginner from "../assets/badge1.png"
+import { NavLink } from "react-router-dom";
 
 function Quiz() {
   return (
@@ -17,11 +18,12 @@ function Quiz() {
         </a>
         
         <div className="p-5 flex flex-wrap gap-5 justify-center">
-          <button className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuSwords   className="my-1 text-2xl"/>Intro to Offensive Security</button>
+          <NavLink to="/Student/Quiz1" className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuSwords   className="my-1 text-2xl"/>Intro to Offensive Security</NavLink>
 
-          <button className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuShield   className="my-1 text-2xl"/>Intro to Defensive Security</button>
+          <NavLink to="/Student/Quiz2" className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuShield   className="my-1 text-2xl"/>Intro to Defensive Security</NavLink>
           
-          <button className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><PiSuitcase className="my-1 text-2xl"/>Careers in Cyber</button>
+          
+          <NavLink disabled className="bg-gray-300 py-5 w-[300px] rounded-xl text-gray-500 font-medium flex items-center text-center flex-col justify-center"><PiSuitcase className="my-1 text-2xl"/>Careers in Cyber<br/><span className="text-[10px] italic text-red-500">not Available Yet</span></NavLink>
         </div>
       </div>
     </>

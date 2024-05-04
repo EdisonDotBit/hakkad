@@ -35,7 +35,7 @@ function StudentLayout() {
               <NavLink
                 to="/Student/Quiz"
                 className={`py-5 flex text-[#0F57C1] bg-[#EBF3FF] ${
-                  location.pathname == "/Student/Quiz"
+                  location.pathname == "/Student/Quiz" || location.pathname == "/Student/Quiz1" || location.pathname == "/Student/Quiz2" || location.pathname == "/Student/Quiz3" 
                     ? "text-[#0F57C1] border-[#0F57C1] border-r-4  bg-[#EBF3FF]"
                     : "text-[#CFCFCF] bg-white border-r-4 border-none"
                 }`}
@@ -80,6 +80,8 @@ function StudentLayout() {
               {
               location.pathname === "/Student/Dashboard" ? "Dashboard" :
               location.pathname === "/Student/Quiz" ? "Quiz" :
+              location.pathname === "/Student/Quiz1" ? "Quiz / Intro to Offensive Security" :
+              location.pathname === "/Student/Quiz2" ? "Quiz / Intro to Defensive Security" :
               location.pathname === "/Student/Leaderboard" ? "Leaderboard" :
               ""
               }

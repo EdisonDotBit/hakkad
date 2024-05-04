@@ -9,6 +9,9 @@ export default {
       screens: {
         "xsm": "200px",
       },
+      colors: {
+        customBlue: '#0f57c1',
+      },
     },
     fontFamily:{
       inter:["Inter","Sans-serif"],
