@@ -9,6 +9,7 @@ import StudentLayout from "./Layout/StudentLayout";
 import Contact from "./components/Contact.jsx";
 import Quiz1 from "./components/Quiz1.jsx";
 import Quiz2 from "./components/Quiz2.jsx";
+import Lesson1 from "./components/Lesson1.jsx";
 
 const Router = () => (
   <>
@@ -18,6 +19,9 @@ const Router = () => (
       <Route path="/LoginPage" element={<Login />} />
       <Route path="/SignUpPage" element={<Register />} />
       <Route path="/Contact" element={<Contact />} />
+
+      {/* Lessons */}
+      <Route path="/Lesson" element={<Lesson1 />} />
 
       <Route path="/Student" element={<StudentLayout />}>
         <Route path="" element={<Navigate to="/Student/Dashboard" />} />

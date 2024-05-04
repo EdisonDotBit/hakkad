@@ -86,7 +86,7 @@ function Quiz2() {
         <div className=' p-5 h-full flex flex-col items-center '>
           {!quizCompleted ? (
             <>
-              <button className='mb-[100px] mt-3 flex items-center text-lg px-2 text-[#0F57C1] opacity-55 hover:opacity-100 transition-all'><FaAngleLeft className="mr-1"/>Exit</button>
+              <NavLink to="/Student/Quiz" className='mb-[100px] mt-3 flex items-center text-lg px-2 text-[#0F57C1] opacity-55 hover:opacity-100 transition-all'><FaAngleLeft className="mr-1"/>Exit</NavLink>
               {/* Question */}
               <div className='relative w-[800px] text-white px-2 py-10 text-center bg-[#0F57C1] rounded-xl flex justify-center'> 
                 <div className='absolute bg-white text-[#0F57C1] px-5 py-2 rounded-full -top-5 border-[2px] border-[#0F57C1]'>

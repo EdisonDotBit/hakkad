@@ -21,8 +21,7 @@ function Quiz() {
           <NavLink to="/Student/Quiz1" className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuSwords   className="my-1 text-2xl"/>Intro to Offensive Security</NavLink>
 
           <NavLink to="/Student/Quiz2" className="bg-white py-5 w-[300px] rounded-xl shadow border-2 border-[#0f57c1] text-[#0f57c1] font-medium hover:bg-[#0f57c1] hover:text-white transition-all flex items-center text-center flex-col justify-center"><LuShield   className="my-1 text-2xl"/>Intro to Defensive Security</NavLink>
-          
-          
+                    
           <NavLink disabled className="bg-gray-300 py-5 w-[300px] rounded-xl text-gray-500 font-medium flex items-center text-center flex-col justify-center"><PiSuitcase className="my-1 text-2xl"/>Careers in Cyber<br/><span className="text-[10px] italic text-red-500">not Available Yet</span></NavLink>
         </div>
       </div>

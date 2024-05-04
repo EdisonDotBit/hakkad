@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { FiLayout, FiAward, FiHelpCircle, FiLogOut } from "react-icons/fi";
@@ -5,9 +6,17 @@ import Beginner from "../assets/badge1.png";
 
 function StudentLayout() {
   const location = useLocation();
+
+  const [profileEditDisplayed, setProfileEditDisplayed] = useState(false);
+
+  const toggleProfileEdit = () => {
+    setProfileEditDisplayed(!profileEditDisplayed);
+  };
+
   return (
     <section>
       <div className="max-h-screen min-h-screen h-full">
+        
         <div className="relative flex">
           
           <div className="relative h-auto max-h-auto min-h-screen  w-[300px]  flex flex-col border-r-[1px] ">
@@ -99,14 +108,16 @@ function StudentLayout() {
                   <p className="font-medium text-[#0F57C1] mr-2">81 pts</p>
                   <img src={Beginner} alt="badges" className="w-auto h-10" />
                 </a>
-
-                <a
-                  href=""
-                  className="bg-[#0F57C1] p-2 px-4 text-xl font-bold text-white rounded-full"
-                >
-                  K
-                </a>
+                
+                <div className="relative text-center">
+                  <div className={profileEditDisplayed ? "bg-white border border-customBlue py-2 px-2 absolute top-[5vh] right-0 rounded-xl" : "hidden"}>
+                    <h1 className="text-2xl font-medium mb-2 text-customBlue">Hi Julius!</h1>
+                    <button className="bg-customBlue text-white p-5 w-[200px] shadow-2xl rounded-lg text-[13px]">Edit Profile</button>
+                  </div>
+                  <a href="#" className="relative bg-[#0F57C1] p-2 px-4 text-xl font-bold text-white rounded-full" onClick={toggleProfileEdit}>J</a>
+                </div>
               </div>
+
             </div>
 
             {/* For Outlet */}
