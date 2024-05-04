@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/iconpng.png'
+import logo2 from '../assets/logo.png'
 import { NavLink } from 'react-router-dom'
 
 function Navigation() {
@@ -9,7 +10,8 @@ function Navigation() {
         <div className=''>
           <img src={logo} alt="logo" className='h-auto w-[100px]'/>
         </div>
-        <div className='mx-5 text-black'>
+
+        <div className='mx-5 text-black flex'>
           <NavLink to="/Home" className=' mx-5 text-[15px] '>Home</NavLink>
           <NavLink to="" className='mx-5 text-[15px] '>About Cybershield</NavLink>
           <NavLink to="/Contact" className='mx-5 text-[15px] '>Contact</NavLink>

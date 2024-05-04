@@ -86,13 +86,18 @@ function StudentLayout() {
             </h1>
 
               <div className="absolute top-0 h-full items-center right-[50px] flex">
-                <a
-                  href=""
-                  className="flex items-center bg-[#EBF3FF] py-1 px-5 rounded-full mr-3 "
+
+                <a href="" className={`flex items-center bg-[#EBF3FF] py-1 px-5 rounded-full mr-3 ${
+                    location.pathname == "/Student/Quiz"
+                      ? "hidden"
+                      : "flex"
+                }`}
                 >
+                  
                   <p className="font-medium text-[#0F57C1] mr-2">81 pts</p>
                   <img src={Beginner} alt="badges" className="w-auto h-10" />
                 </a>
+
                 <a
                   href=""
                   className="bg-[#0F57C1] p-2 px-4 text-xl font-bold text-white rounded-full"
