@@ -10,6 +10,8 @@ import Contact from "./components/Contact.jsx";
 import Quiz1 from "./components/Quiz1.jsx";
 import Quiz2 from "./components/Quiz2.jsx";
 import Lesson1 from "./components/Lesson1.jsx";
+import Lesson2 from "./components/Lesson2.jsx";
+import Lesson3 from "./components/Lesson3.jsx";
 
 const Router = () => (
   <>
@@ -21,7 +23,9 @@ const Router = () => (
       <Route path="/Contact" element={<Contact />} />
 
       {/* Lessons */}
-      <Route path="/Lesson" element={<Lesson1 />} />
+      <Route path="/Lesson1" element={<Lesson1 />} />
+      <Route path="/Lesson2" element={<Lesson2 />} />
+      <Route path="/Lesson3" element={<Lesson3 />} />
 
       <Route path="/Student" element={<StudentLayout />}>
         <Route path="" element={<Navigate to="/Student/Dashboard" />} />

@@ -38,7 +38,7 @@ function DashboardContent() {
 
                                 <div className='relative w-full'>
                                     <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
-                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                        <NavLink to="/Lesson1" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
                                     </div>
                                     <img src={Lesson1} alt="lesson1" />
                                 </div>
@@ -62,7 +62,7 @@ function DashboardContent() {
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
                                 <div className='relative w-full'>
                                     <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
-                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                        <NavLink to="/Lesson2" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
                                     </div>
                                     <img src={Lesson2} alt="lesson2" />
                                 </div>
@@ -86,7 +86,7 @@ function DashboardContent() {
                             <div className='overflow-hidden flex flex-col bg-white w-[200px] h-[230px] rounded-lg shadow'>
                                 <div className='relative w-full'>
                                     <div className='absolute flex items-center justify-center top-0 bg-[#ebf3ff5b] w-full h-full opacity-0 hover:opacity-100 transition-all'>
-                                        <NavLink to="" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
+                                        <NavLink to="/Lesson3" className="text-[#0F57C1] font-medium bg-white shadow-xl py-2 px-5 text-[13px] rounded-lg">Start Learning</NavLink>
                                     </div>
                                     <img src={Lesson3} alt="lesson3" />
                                 </div>
