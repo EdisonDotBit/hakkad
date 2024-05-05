@@ -12,6 +12,7 @@ import Quiz2 from "./components/Quiz2.jsx";
 import Lesson1 from "./components/Lesson1.jsx";
 import Lesson2 from "./components/Lesson2.jsx";
 import Lesson3 from "./components/Lesson3.jsx";
+import EditProfile from "./components/EditProfile.jsx";
 
 const Router = () => (
   <>
@@ -21,6 +22,7 @@ const Router = () => (
       <Route path="/LoginPage" element={<Login />} />
       <Route path="/SignUpPage" element={<Register />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="/Profile" element={<EditProfile />} />
 
       {/* Lessons */}
       <Route path="/Lesson1" element={<Lesson1 />} />

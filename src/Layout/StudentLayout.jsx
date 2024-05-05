@@ -110,9 +110,11 @@ function StudentLayout() {
                 </a>
                 
                 <div className="relative text-center">
-                  <div className={profileEditDisplayed ? "bg-white border border-customBlue py-2 px-2 absolute top-[5vh] right-0 rounded-xl" : "hidden"}>
+                  <div className={profileEditDisplayed ? "bg-white border w-[20vh] border-customBlue py-2 px-2 absolute top-[5vh] right-0 rounded-xl" : "hidden"}>
                     <h1 className="text-2xl font-medium mb-2 text-customBlue">Hi Julius!</h1>
-                    <button className="bg-customBlue text-white p-5 w-[200px] shadow-2xl rounded-lg text-[13px]">Edit Profile</button>
+                    <NavLink to="/Profile">
+                      <button class="px-5 text-center justify-center text-[13px] bg-customBlue flex w-full py-2 rounded-lg text-white">Edit Profile</button>
+                    </NavLink>
                   </div>
                   <a href="#" className="relative bg-[#0F57C1] p-2 px-4 text-xl font-bold text-white rounded-full" onClick={toggleProfileEdit}>J</a>
                 </div>
