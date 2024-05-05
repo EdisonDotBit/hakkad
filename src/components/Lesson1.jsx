@@ -17,8 +17,9 @@ function Lesson1() {
 
     const toggleDropdown = (dropdownName) => {
         setDropdownStates(prevState => ({
-            ...prevState,
-            [dropdownName]: !prevState[dropdownName]
+            dropdown1: dropdownName === 'dropdown1' ? !prevState.dropdown1 : false,
+            dropdown2: dropdownName === 'dropdown2' ? !prevState.dropdown2 : false,
+            dropdown3: dropdownName === 'dropdown3' ? !prevState.dropdown3 : false
         }));
     };
 
@@ -127,6 +128,7 @@ function Lesson1() {
             setButtonColor3('red');
         }
     };
+    
 
     return (
         <section>
