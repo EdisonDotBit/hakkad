@@ -154,7 +154,7 @@ function About() {
                   />
 
                   <div className="text-center pb-6">
-                    <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-white">
+                    <h3 className="text-sm mt-6 font-semibold leading-7 tracking-tight text-gray-900 dark:text-white">
                       John Kenneth Macabitas
                     </h3>
                     <p className="text-sm leading-6 text-gray-500 dark:text-gray-400">
