@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import Footer from "./Footer";
 
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -12,7 +13,7 @@ function Register() {
 
   return (
     <>
-      <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900">
+      <section className="font-['Roboto'] dark:bg-gray-900 h-screen w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
         <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
 
         <div className="flex justify-center p-5">
@@ -35,7 +36,7 @@ function Register() {
                 alt="logo"
               /> */}
           </a>
-          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-[#e5e7eb]">
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-[#e5e7eb] mb-10">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <form className="space-y-4 md:space-y-6" action="#">
                 <div>
@@ -152,6 +153,8 @@ function Register() {
             </div>
           </div>
         </div>
+
+        <Footer />
       </section>
     </>
   );
