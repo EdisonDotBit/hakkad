@@ -13,6 +13,7 @@ import Lesson1 from "./components/Lesson1.jsx";
 import Lesson2 from "./components/Lesson2.jsx";
 import Lesson3 from "./components/Lesson3.jsx";
 import EditProfile from "./components/EditProfile.jsx";
+import About from "./views/About.jsx";
 
 const Router = () => (
   <>
@@ -21,6 +22,7 @@ const Router = () => (
       <Route path="/Home" element={<LandingPage />} />
       <Route path="/LoginPage" element={<Login />} />
       <Route path="/SignUpPage" element={<Register />} />
+      <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/Profile" element={<EditProfile />} />
 

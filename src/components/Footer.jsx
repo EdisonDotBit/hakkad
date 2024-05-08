@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
     <>
-        <footer className='relative w-full py-10 p-5 bg-[#3f83e8] text-center'>
-            <h1 className='text-white text-lg'>CYBERSHIELD : Website Security Training for IT Students at Rizal Technological University</h1>
-        </footer>
+      <footer class="text-center lg:text-left bg-[#3f83e8] ">
+        <div class="p-4 text-center text-sm text-white font-light text-surface dark:text-white">
+          © 2024 Copyright - CYBERSHIELD : Website Security Training for IT
+          Students at Rizal Technological University
+        </div>
+      </footer>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
