@@ -1,16 +1,14 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png"
+import Navigation from "./Navigation"
 
  function Contact() {
   return (
-    <>
-  
-    <div className="flex flex-col bg-gray-50 font-['Roboto'] dark:bg-gray-900 dark:border-[#e5e7eb]">
-      <div className="flex justify-center p-5">
-        <NavLink to="/Home"><img src={logo} alt="logo" className="w-auto h-[100px]" /></NavLink>
-      </div>
-        
+    <section>
+    <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <Navigation/>
+    <div className="flex flex-col py-20  font-['Roboto'] dark:bg-gray-900 dark:border-[#e5e7eb]">        
       <div className="flex flex-col p-[5px] space-y-4">
         <h1 className="text-center text-4xl font-bold leading-tight tracking-tight text-gray-700 dark:text-white">Send us a message</h1>
         <p className="text-center text-xl text-gray-700 dark:text-white">We appreciate your feedback.</p>
@@ -26,7 +24,7 @@ import logo from "../assets/logo.png"
       </div>
     </div>
 
-    </>
+    </section>
   )
 }
 
