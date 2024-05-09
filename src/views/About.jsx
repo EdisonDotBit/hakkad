@@ -10,7 +10,7 @@ function About() {
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-start-3 md:col-span-8">
             <div className="pb-20">
-              <h1 className="text-4xl font-bold text-center mb-8">
+              <h1 className="xsm:text-2xl sm:text-4xl font-bold text-center mb-8">
                 About CyberShield
               </h1>
               <p className="text-md text-justify font-light text-gray-700">
@@ -118,7 +118,7 @@ function About() {
 
       <div className="container mx-auto">
         <div>
-          <h1 className="text-center text-4xl font-bold py-6" id="team">
+          <h1 className="text-center xsm:text-2xl sm:text-4xl font-bold py-6" id="team">
             Meet the Team
           </h1>
           <p className="pb-4 text-center text-sm sm:text-base mx-auto text-gray-500 dark:text-gray-400">
@@ -130,7 +130,7 @@ function About() {
           <div className="mt-10 space-y-16">
             <div className="space-y-10" id="core">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white pb-2">
+                <h2 className="xsm:text-center sm:text-left text-2xl font-semibold text-gray-900 dark:text-white pb-2">
                   Frontend Developers
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base text-justify">
@@ -349,7 +349,7 @@ function About() {
           <div className="mt-10 space-y-16">
             <div className="space-y-10" id="core">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white pb-2">
+                <h2 className="xsm:text-center sm:text-left text-2xl font-semibold text-gray-900 dark:text-white pb-2">
                   Backend Developers
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base text-justify">
@@ -438,7 +438,7 @@ function About() {
           <div className="mt-10 space-y-16">
             <div className="space-y-10" id="core">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white pb-2">
+                <h2 className="xsm:text-center sm:text-left text-2xl font-semibold text-gray-900 dark:text-white pb-2">
                   Documentary and Research Team
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base text-justify">
