@@ -6,14 +6,14 @@ function About() {
   return (
     <section className="bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
       <Navigation />
-      <div className="container mx-auto ">
+      <div className="container mx-auto xsm:w-screen">
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-start-3 md:col-span-8">
             <div className="pb-20">
               <h1 className="xsm:text-2xl sm:text-4xl font-bold text-center mb-8">
                 About CyberShield
               </h1>
-              <p className="text-md text-justify font-light text-gray-700">
+              <p className="text-base text-justify font-light text-gray-700">
                 CyberShield is a web platform focused on boosting security
                 awareness and training in today's digital world. It's crucial
                 for both individuals and organizations to be ready to defend
