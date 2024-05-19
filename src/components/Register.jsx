@@ -12,7 +12,7 @@ function Register() {
 
   return (
     <>
-      <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900">
+      <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900 pb-10">
       <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
       
         <div className="flex justify-center p-5">

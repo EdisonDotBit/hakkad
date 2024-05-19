@@ -16,7 +16,7 @@ function Leaderboard() {
                       alt=""
                     />
                     <div className="text-[#0F57C1]">
-                      <p className="text-2xl font-medium">Julius "Open your cam" Konichiwa (5)</p>
+                      <p className="text-2xl font-medium">Justine Lopez (5)</p>
                       <p className="text-sm font-normal">81 points</p>
                     </div>
                   </div>
@@ -119,7 +119,7 @@ function Leaderboard() {
                     <tbody className="font-normal text-center">
                       <tr className="border-b-2 border-gray-200 last:border-0">
                         <td className="py-4">1</td>
-                        <td className="py-4">Alvez Rey Studio</td>
+                        <td className="py-4">Alden Rubio</td>
                         <td className="py-4">973</td>
                         <td className="flex justify-center -2">
                           <img
@@ -132,7 +132,7 @@ function Leaderboard() {
                       </tr>
                       <tr className="border-b-2 border-gray-200 last:border-0">
                         <td className="py-4">2</td>
-                        <td className="py-4">Alquinatics</td>
+                        <td className="py-4">Kevin De Alva</td>
                         <td className="py-4">708</td>
                         <td className="flex justify-center -2">
                           <img
@@ -145,7 +145,7 @@ function Leaderboard() {
                       </tr>
                       <tr className="border-b-2 border-gray-200 last:border-0">
                         <td className="py-4">3</td>
-                        <td className="py-4">Adrian Oropesa</td>
+                        <td className="py-4">Mark Taz</td>
                         <td className="py-4">500</td>
                         <td className="flex justify-center -2">
                           <img
@@ -172,7 +172,7 @@ function Leaderboard() {
                       <tr className="border-b-2 border-gray-200 last:border-0">
                         <td className="py-4">5</td>
                         <td className="py-4">
-                          Julius "Open your cam" Konichiwa
+                          Justine Lopez
                         </td>
                         <td className="py-4">81</td>
                         <td className="flex justify-center -2">
@@ -185,11 +185,11 @@ function Leaderboard() {
                         </td>
                       </tr>
                       <tr className="border-b-2 border-gray-200 last:border-0">
-                        <td className="py-4">5</td>
+                        <td className="py-4">6</td>
                         <td className="py-4">
-                          Julius "Open your cam" Konichiwa
+                          Laurence Kropio
                         </td>
-                        <td className="py-4">81</td>
+                        <td className="py-4">77</td>
                         <td className="flex justify-center -2">
                           <img
                             src="../src/assets/badge1.png"
@@ -200,11 +200,11 @@ function Leaderboard() {
                         </td>
                       </tr>
                       <tr className="border-b-2 border-gray-200 last:border-0">
-                        <td className="py-4">5</td>
+                        <td className="py-4">7</td>
                         <td className="py-4">
-                          Julius "Open your cam" Konichiwa
+                          James Gildre
                         </td>
-                        <td className="py-4">81</td>
+                        <td className="py-4">72</td>
                         <td className="flex justify-center -2">
                           <img
                             src="../src/assets/badge1.png"
