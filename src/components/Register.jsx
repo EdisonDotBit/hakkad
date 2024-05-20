@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -13,10 +13,12 @@ function Register() {
   return (
     <>
       <section className="font-['Roboto'] bg-gray-50 dark:bg-gray-900 pb-10">
-      <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
-      
+        <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
+
         <div className="flex justify-center p-5">
-         <NavLink to="/Home"><img src={logo} alt="logo" className="w-auto h-[100px]" /></NavLink>
+          <NavLink to="/home">
+            <img src={logo} alt="logo" className="w-auto h-[100px]" />
+          </NavLink>
         </div>
 
         <div className="flex flex-col items-center justify-center">
@@ -140,7 +142,7 @@ function Register() {
                 <p className="text-center text-sm font-light text-gray-500 dark:text-gray-400">
                   Already have an account?{" "}
                   <NavLink
-                    to="/LoginPage"
+                    to="/login"
                     className="font-bold text-blue-700 hover:text-gray-700 hover:underline dark:text-primary-500"
                   >
                     Sign in
