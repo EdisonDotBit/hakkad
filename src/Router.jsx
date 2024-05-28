@@ -13,34 +13,35 @@ import Lesson1 from "./components/Lesson1.jsx";
 import Lesson2 from "./components/Lesson2.jsx";
 import Lesson3 from "./components/Lesson3.jsx";
 import EditProfile from "./components/EditProfile.jsx";
-import About from "./views/About.jsx";
+import { AuthProvider } from "./Hooks/useAuth.jsx";
 
 const Router = () => (
   <>
-    <Routes>
-      <Route path="*" element={<Navigate to="/Home" />} />
-      <Route path="/Home" element={<LandingPage />} />
-      <Route path="/LoginPage" element={<Login />} />
-      <Route path="/SignUpPage" element={<Register />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/Profile" element={<EditProfile />} />
+    <AuthProvider>
+      <Routes>
+        <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profile" element={<EditProfile />} />
 
-      {/* Lessons */}
-      <Route path="/Lesson1" element={<Lesson1 />} />
-      <Route path="/Lesson2" element={<Lesson2 />} />
-      <Route path="/Lesson3" element={<Lesson3 />} />
+        {/* Lessons */}
+        <Route path="/l1" element={<Lesson1 />} />
+        <Route path="/l2" element={<Lesson2 />} />
+        <Route path="/l3" element={<Lesson3 />} />
 
-      <Route path="/Student" element={<StudentLayout />}>
-        <Route path="" element={<Navigate to="/Student/Dashboard" />} />
-        <Route path="Dashboard" element={<DashboardContent />} />
-        <Route path="Quiz" element={<Quiz />} />
-        <Route path="Leaderboard" element={<Leaderboard />} />
+        <Route path="/student" element={<StudentLayout />}>
+          <Route path="" element={<DashboardContent />} />
+          <Route path="dashboard" element={<DashboardContent />} />
+          <Route path="quiz" element={<Quiz />} />
+          <Route path="leaderboards" element={<Leaderboard />} />
 
-        <Route path="Quiz1" element={<Quiz1 />} />
-        <Route path="Quiz2" element={<Quiz2 />} />
-      </Route>
-    </Routes>
+          <Route path="q1" element={<Quiz1 />} />
+          <Route path="q2" element={<Quiz2 />} />
+        </Route>
+      </Routes>
+    </AuthProvider>
   </>
 );
 

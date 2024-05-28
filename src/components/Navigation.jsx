@@ -12,35 +12,26 @@ function Navigation() {
         </div>
 
         <div className="mx-5 text-black flex">
-          <NavLink
-            to="/Home"
-            className=" mx-5 text-[15px] hover:underline underline-offset-8 decoration-[#3f83e8]"
-          >
+          <NavLink to="/home" className=" mx-5 text-[15px] ">
             Home
           </NavLink>
-          <NavLink
-            to="/About"
-            className=" mx-5 text-[15px] hover:underline underline-offset-8 decoration-[#3f83e8]"
-          >
+          <NavLink to="" className="mx-5 text-[15px] ">
             About Cybershield
           </NavLink>
-          <NavLink
-            to="/Contact"
-            className=" mx-5 text-[15px] hover:underline underline-offset-8 decoration-[#3f83e8]"
-          >
+          <NavLink to="/Contact" className="mx-5 text-[15px] ">
             Contact
           </NavLink>
         </div>
         <div className="absolute right-[100px] text-white flex gap-2">
           <NavLink
-            to="/LoginPage"
-            className="bg-[#3f83e8] py-2 px-6 rounded-md text-[14px] hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-primary-300"
+            to="/login"
+            className="bg-black py-2 px-6 rounded-md text-[14px]"
           >
             Login
           </NavLink>
           <NavLink
-            to="/SignUpPage"
-            className="bg-[#3f83e8] py-2 px-6 rounded-md text-[14px] hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-primary-300"
+            to="/register"
+            className="bg-black py-2 px-6 rounded-md text-[14px]"
           >
             Register
           </NavLink>

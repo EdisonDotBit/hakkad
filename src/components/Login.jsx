@@ -17,7 +17,7 @@ function Login() {
         <div className="-z-10 absolute left-0 right-0 bottom-0 top-0 w-full h-full dark:bg-gray-900"></div>
 
         <div className="flex justify-center p-5">
-          <NavLink to="/Home">
+          <NavLink to="/home">
             <img src={logo} alt="logo" className="w-auto h-[100px]" />
           </NavLink>
         </div>
@@ -118,7 +118,7 @@ function Login() {
                 <p className="text-center text-sm font-light text-gray-500 dark:text-gray-400">
                   Don't have an account yet?{" "}
                   <NavLink
-                    to="/SignUpPage"
+                    to="/register"
                     className="font-bold text-blue-700 hover:text-gray-700 hover:underline dark:text-primary-500"
                   >
                     Sign up
@@ -128,8 +128,6 @@ function Login() {
             </div>
           </div>
         </div>
-
-        <Footer />
       </section>
     </>
   );

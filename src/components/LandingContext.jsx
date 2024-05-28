@@ -6,7 +6,7 @@ function LandingContext() {
   return (
     <>
       <div className="p-10 flex flex-col justify-center items-center font-poppins relative">
-        <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div className="pt-[70px] p-5 w-full flex justify-center px-[500px] gap-10">
           <div className="max-w-[300px] max-h-[300px] min-w-[300px] w-[500px] h-[500px]">
             <img src={gamified} alt="" />
@@ -22,7 +22,7 @@ function LandingContext() {
               points by answering questions, taking on challenges and maintain
               your hacking streak through short lessons.
             </p>
-            <button className="text-[13px] bg-[#3f83e8] text-white py-3 px-10 my-4 rounded-xl hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-primary-300">
+            <button className="text-[13px] bg-[#3f83e8] text-white py-3 px-10 my-4 rounded-xl">
               Start Quiz
             </button>
           </div>
@@ -38,7 +38,7 @@ function LandingContext() {
               a real-world environment by completing guided, objective-based
               tasks and challenges.{" "}
             </p>
-            <button className="text-[13px] bg-[#3f83e8] text-white py-3 px-10 my-4 rounded-xl hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-primary-300">
+            <button className="text-[13px] bg-[#3f83e8] text-white py-3 px-10 my-4 rounded-xl">
               Start Larning
             </button>
           </div>
@@ -50,7 +50,7 @@ function LandingContext() {
           <h1 className="font-bold text-4xl">
             Ready to start learning cyber security?
           </h1>
-          <button className="py-4 rounded-xl px-10 bg-[#3f83e8] text-white text-[14px] my-7 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-primary-300">
+          <button className="py-4 rounded-xl px-10 bg-[#3f83e8] text-white text-[14px] my-7">
             Join for FREE
           </button>
         </div>
