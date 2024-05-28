@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import LandingPage from "./views/LandingPage";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import About from "./views/About.jsx";
 import DashboardContent from "./views/DashboardContent";
 import Quiz from "./views/Quiz";
 import Leaderboard from "./views/Leaderboard";
@@ -25,6 +26,7 @@ const Router = () => (
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/profile" element={<EditProfile />} />
+        <Route path="/about" element={<About />} />
 
         {/* Lessons */}
         <Route path="/l1" element={<Lesson1 />} />

@@ -15,7 +15,7 @@ function Navigation() {
           <NavLink to="/home" className=" mx-5 text-[15px] ">
             Home
           </NavLink>
-          <NavLink to="" className="mx-5 text-[15px] ">
+          <NavLink to="/about" className="mx-5 text-[15px] ">
             About Cybershield
           </NavLink>
           <NavLink to="/Contact" className="mx-5 text-[15px] ">
