@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import Footer from "../components/Footer"
 
 function Register() {
   const [showPassword, setShowPassword] = useState(false);
@@ -153,7 +154,7 @@ function Register() {
           </div>
         </div>
 
-        <Footer />
+        <Footer/>
       </section>
     </>
   );
