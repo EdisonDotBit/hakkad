@@ -16,7 +16,7 @@ function DashboardContent() {
                                 </div>
                                 <div className='flex-col ml-4'>
                                     <h1 className='text-2xl font-medium'>In Progress</h1>
-                                    <p className='text-sm text-[#A3A3A3]'>1 Courses</p>
+                                    <p className='text-sm text-[#A3A3A3]'>2 Courses</p>
                                 </div>
                             </div>
                             
@@ -26,7 +26,7 @@ function DashboardContent() {
                                 </div>
                                 <div className='flex-col ml-4'>
                                     <h1 className='text-2xl font-medium'>Completed</h1>
-                                    <p className='text-sm text-[#A3A3A3]'>2 Courses</p>
+                                    <p className='text-sm text-[#A3A3A3]'>1 Courses</p>
                                 </div>
                             </div>      
                         </div>
@@ -73,9 +73,9 @@ function DashboardContent() {
                                 </div>
 
                                 <div className='px-2'>
-                                    <div className='flex text-[12px] text-[#13C10F] font-medium'>
-                                        <p className='mr-1'>100%</p>
-                                        <p>Complete</p>
+                                    <div className='flex text-[12px] text-[#ffb424] font-medium'>
+                                        <p className='mr-1'>33%</p>
+                                        <p>Pending</p>
                                     </div>
                                     <div className='relative overflow-hidden bg-[#D8FFD9] w-full pt-2 mt-[6px] rounded-full'>
                                         <div className='absolute top-0 w-[100%] rounded-full h-full bg-[#13C10F]'></div>
