@@ -18,3 +18,4 @@ Tech-Stack
 - Design Process: Figma
 
 Note: this website is in a stage of prototype where most functions won't work and some values are prebuilt for the sake of visual presentation.  
+Live Demo won't also work properly especially when running a react live demo. You'll probably only reach until the landing page.
